@@ -20,5 +20,19 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  app.import('bower_components/ionic/release/fonts/ionicons.eot', {
+  destDir: '/fonts'
+  });
+  app.import('bower_components/ionic/release/fonts/ionicons.svg', {
+    destDir: '/fonts'
+  });
+  app.import('bower_components/ionic/release/fonts/ionicons.ttf', {
+    destDir: '/fonts'
+  });
+  app.import('bower_components/ionic/release/fonts/ionicons.woff', {
+    destDir: '/fonts'
+  });
+  app.import('bower_components/ionic/release/css/ionic.css');
+
   return app.toTree();
 };
