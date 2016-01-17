@@ -34,5 +34,9 @@ module.exports = function(defaults) {
   });
   app.import('bower_components/ionic/release/css/ionic.css');
 
+  app.import('bower_components/ionic/release/js/ionic.js');
+
+  app.import('bower_components/fastclick/lib/fastclick.js');
+
   return app.toTree();
 };
